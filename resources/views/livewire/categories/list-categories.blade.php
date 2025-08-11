@@ -168,7 +168,6 @@ new class extends Component {
                                 class="px-4 py-3 text-sm text-zinc-700 dark:text-zinc-200 flex items-center gap-2 justify-between">
                                 {{ $category->name }}
 
-                                {{-- Modal pantallas grandes --}}
                                 <div>
                                     <flux:dropdown>
                                         <flux:button icon:trailing="ellipsis-vertical" variant="outline"></flux:button>
