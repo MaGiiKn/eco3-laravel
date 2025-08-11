@@ -61,7 +61,7 @@ new class extends Component {
 
     public function updatedName($value)
     {
-        $this->name = ucfirst(strtolower(trim($value)));
+        $this->name = ucfirst(strtolower($value));
         $this->validateOnly('name');
     }
 
