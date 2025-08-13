@@ -28,4 +28,12 @@ class Product extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    // Accesor para precio formateado sin decimales y con separador de miles
+    public function getPriceFormattedAttribute(): string
+    {
+        $amount = (int) round($this->price ?? 0);
+        // Formato: miles con punto, sin decimales
+        return number_format($amount, 0, ',', '.');
+    }
 }
